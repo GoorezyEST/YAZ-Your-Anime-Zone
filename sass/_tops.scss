@@ -1,0 +1,420 @@
+.tops {
+  padding: 1rem 2rem 2rem 2rem;
+  height: max-content;
+  margin-bottom: 5rem;
+
+  @media screen and (max-width: $bp-large) {
+    padding: 1rem 2rem 1rem 2rem;
+  }
+
+  &__heading {
+    font-size: 4.2rem;
+    font-weight: 500;
+    color: $color-primary-dark;
+    text-transform: uppercase;
+    margin-left: 1.8rem;
+    margin-bottom: 1.4rem;
+    cursor: default;
+
+    @media screen and (max-width: $bp-large) {
+      margin-left: 5.2rem;
+    }
+
+    &::selection {
+      background-color: rgba($color-primary, 0.5);
+      color: #fff;
+    }
+  }
+
+  &__container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(25rem, 1fr));
+    row-gap: 2.8rem;
+    column-gap: 0.5rem;
+    justify-items: center;
+    border: 1px solid transparent;
+
+    @media screen and (max-width: $bp-large) {
+      grid-template-columns: repeat(3, minmax(25rem, 1fr));
+    }
+
+    @media screen and (max-width: $bp-small) {
+      grid-template-columns: repeat(2, minmax(25rem, 1fr));
+    }
+
+    & > * {
+      font-size: 1.5rem;
+      color: $color-grey-light;
+      width: max-content;
+      line-height: 1.4;
+    }
+  }
+
+  &__title {
+    cursor: pointer;
+    &::selection {
+      background-color: rgba($color-primary, 0.5);
+      color: #fff;
+    }
+  }
+
+  &__gender {
+    margin-bottom: 1rem;
+    cursor: pointer;
+    &::selection {
+      background-color: rgba($color-primary, 0.5);
+      color: #fff;
+    }
+  }
+
+  &__emited {
+    cursor: pointer;
+    &::selection {
+      background-color: rgba($color-primary, 0.5);
+      color: #fff;
+    }
+  }
+
+  &__link {
+    background-color: $color-primary-light;
+    color: $color-grey-light;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    border-radius: 2rem;
+
+    &:active {
+      background-color: $color-primary;
+    }
+
+    &:hover {
+      background-color: $color-primary;
+    }
+
+    &::selection {
+      background-color: rgba($color-primary, 0.5);
+      color: #fff;
+    }
+  }
+}
+
+.top-1 {
+  padding: 2rem;
+  border-radius: 2rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/fma.jpg);
+  background-size: cover;
+  width: 75%;
+  border-bottom: 4px solid $color-primary-light;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1) translateY(-0.3rem);
+  }
+}
+
+.top-2 {
+  padding: 2rem;
+  border-radius: 2rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/snk.png);
+  background-size: cover;
+  width: 75%;
+  border-bottom: 4px solid $color-primary-light;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1) translateY(-0.3rem);
+  }
+}
+
+.top-3 {
+  padding: 2rem;
+  border-radius: 2rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/hxh.jpg);
+  background-size: cover;
+  width: 75%;
+  border-bottom: 4px solid $color-primary-light;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1) translateY(-0.3rem);
+  }
+}
+
+.top-4 {
+  padding: 2rem;
+  border-radius: 2rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/deathnote.jpg);
+  background-size: cover;
+  width: 75%;
+  border-bottom: 4px solid $color-primary-light;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1) translateY(-0.3rem);
+  }
+}
+
+.top-5 {
+  padding: 2rem;
+  border-radius: 2rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/codegeass.jpg);
+  background-size: cover;
+  width: 75%;
+  border-bottom: 4px solid $color-primary-light;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1) translateY(-0.3rem);
+  }
+}
+
+.top-6 {
+  padding: 2rem;
+  border-radius: 2rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/steinsgate.png);
+  background-size: cover;
+  width: 75%;
+  border-bottom: 4px solid $color-primary-light;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1) translateY(-0.3rem);
+  }
+}
+
+.top-7 {
+  padding: 2rem;
+  border-radius: 2rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/berserk.jpg);
+  background-size: cover;
+  width: 75%;
+  border-bottom: 4px solid $color-primary-light;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1) translateY(-0.3rem);
+  }
+}
+
+.top-8 {
+  padding: 2rem;
+  border-radius: 2rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/evangelion.jpg);
+  background-size: cover;
+  width: 75%;
+  border-bottom: 4px solid $color-primary-light;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1) translateY(-0.3rem);
+  }
+}
+
+.top-9 {
+  padding: 2rem;
+  border-radius: 2rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/onepiece.jpg);
+  background-size: cover;
+  width: 75%;
+  border-bottom: 4px solid $color-primary-light;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1) translateY(-0.3rem);
+  }
+}
+
+.top-10 {
+  padding: 2rem;
+  border-radius: 2rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/naruto.jpg);
+  background-size: cover;
+  width: 75%;
+  border-bottom: 4px solid $color-primary-light;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1) translateY(-0.3rem);
+  }
+}
+
+.top-11 {
+  padding: 2rem;
+  border-radius: 2rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/jujutsukaisen.png);
+  background-size: cover;
+  width: 75%;
+  border-bottom: 4px solid $color-primary-light;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1) translateY(-0.3rem);
+  }
+}
+
+.top-12 {
+  padding: 2rem;
+  border-radius: 2rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/kimetsu.jpg);
+  background-size: cover;
+  width: 75%;
+  border-bottom: 4px solid $color-primary-light;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1) translateY(-0.3rem);
+  }
+}
+
+.top-13 {
+  padding: 2rem;
+  border-radius: 2rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/castlevania.jpg);
+  background-size: cover;
+  width: 75%;
+  border-bottom: 4px solid $color-primary-light;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1) translateY(-0.3rem);
+  }
+}
+
+.top-14 {
+  padding: 2rem;
+  border-radius: 2rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/bokunohero.jpg);
+  background-size: cover;
+  width: 75%;
+  border-bottom: 4px solid $color-primary-light;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1) translateY(-0.3rem);
+  }
+}
+
+.top-15 {
+  padding: 2rem;
+  border-radius: 2rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/bleach.jpg);
+  background-size: cover;
+  width: 75%;
+  border-bottom: 4px solid $color-primary-light;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1) translateY(-0.3rem);
+  }
+}
+
+.top-16 {
+  padding: 2rem;
+  border-radius: 2rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/kurokonobasket.jpg);
+  background-size: cover;
+  width: 75%;
+  border-bottom: 4px solid $color-primary-light;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1) translateY(-0.3rem);
+  }
+}
+
+.top-17 {
+  padding: 2rem;
+  border-radius: 2rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/onepunchman.jpg);
+  background-size: cover;
+  width: 75%;
+  border-bottom: 4px solid $color-primary-light;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1) translateY(-0.3rem);
+  }
+}
+
+.top-18 {
+  padding: 2rem;
+  border-radius: 2rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/tokyoghoul.jpg);
+  background-size: cover;
+  width: 75%;
+  border-bottom: 4px solid $color-primary-light;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1) translateY(-0.3rem);
+  }
+}
+
+.open-sites__btn {
+  font-size: 1.8rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  background-color: $color-primary-light;
+  color: $color-grey-light;
+  border: none;
+  border-radius: 3rem;
+  padding: 1.5rem;
+  height: max-content;
+  transition: all 0.2s;
+  cursor: pointer;
+  align-self: center;
+  justify-self: center;
+
+  &:hover {
+    transform: scale(1.1) translateY(-0.5rem);
+    background-color: $color-primary;
+  }
+
+  &:active {
+    transform: scale(0.9);
+    background-color: $color-primary-light;
+  }
+
+  &::selection {
+    background-color: rgba($color-primary, 0.5);
+    color: #fff;
+  }
+}

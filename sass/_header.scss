@@ -1,0 +1,65 @@
+.header {
+  display: flex;
+  height: 100vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.5),
+      rgba($color-primary-dark, 0.5)
+    ),
+    url(../img/header-bg.jpg);
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: $bp-small) {
+    height: max-content;
+    padding: 3rem;
+  }
+
+  &__nav {
+    padding: 2rem;
+    border: 0.3rem solid $color-text-dark;
+    border-radius: 2.5rem;
+    background-color: rgba($color-primary-light, 0.85);
+    width: max-content;
+    height: max-content;
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 27.5%;
+    height: 27.5%;
+  }
+
+  &__list {
+    display: flex;
+    font-size: 2.2rem;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    color: $color-text-dark;
+    list-style: none;
+  }
+
+  &__item {
+    text-transform: uppercase;
+    transition: all 0.2s;
+    margin-right: 2.5rem;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1) translateY(-0.2rem);
+      text-shadow: 2rem 2rem 4rem rgba(256, 256, 256, 0.8);
+    }
+
+    &:active {
+      transform: scale(1) translateY(0);
+      text-shadow: 2rem 2rem 4rem rgba(0, 0, 0, 0.3);
+    }
+
+    &::selection {
+      background-color: rgba($color-primary, 0.5);
+      color: #fff;
+    }
+  }
+}

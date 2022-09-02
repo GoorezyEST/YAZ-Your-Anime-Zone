@@ -1,0 +1,7 @@
+.layout {
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 4rem;
+  box-shadow: $shadow-light;
+}

@@ -1,0 +1,142 @@
+.home {
+  padding: 2rem;
+  height: max-content;
+  display: grid;
+  grid-template-columns: 50vw repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
+  margin-bottom: 2rem;
+
+  &__description-1 {
+    padding: 2rem;
+    grid-column: 1 / 2;
+    align-self: center;
+  }
+
+  &__description-2 {
+    padding: 2rem;
+    grid-column: 1 / 2;
+    align-self: center;
+  }
+
+  &__heading-1 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: $color-primary;
+    margin-bottom: 0.7rem;
+    text-align: center;
+    text-shadow: 0 0.5rem 2rem rgba(255, 72, 185, 0.452);
+    cursor: default;
+
+    &::selection {
+      background-color: rgba($color-primary, 0.5);
+      color: #fff;
+    }
+  }
+
+  &__text-1 {
+    font-size: 2rem;
+    font-weight: 400;
+    color: $color-text-dark;
+    text-align: center;
+    cursor: default;
+
+    &::selection {
+      background-color: rgba($color-primary, 0.5);
+      color: #fff;
+    }
+  }
+
+  &__heading-2 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: $color-primary;
+    margin-bottom: 0.7rem;
+    text-align: center;
+    text-shadow: 0 0.5rem 2rem rgba(255, 72, 185, 0.452);
+    cursor: default;
+
+    &::selection {
+      background-color: rgba($color-primary, 0.5);
+      color: #fff;
+    }
+  }
+
+  &__text-2 {
+    font-size: 2rem;
+    font-weight: 400;
+    color: $color-text-dark;
+    text-align: center;
+    cursor: default;
+
+    &::selection {
+      background-color: rgba($color-primary, 0.5);
+      color: #fff;
+    }
+  }
+
+  &__picture-1 {
+    grid-column: 2 / 4;
+
+    background-image: linear-gradient(
+        rgba($color-primary-light, 0.3),
+        rgba($color-primary-light, 0.3)
+      ),
+      url(../img/desc-pic-1.jpg);
+    background-size: cover;
+    object-fit: cover;
+    max-height: 100%;
+    width: 100%;
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+
+    &:hover {
+      filter: saturate(1.2);
+    }
+  }
+
+  &__picture-2 {
+    grid-column: 4 / 5;
+
+    background-image: linear-gradient(
+        rgba($color-primary-light, 0.3),
+        rgba($color-primary-light, 0.3)
+      ),
+      url(../img/desc-pic-2.jpg);
+    background-size: cover;
+    object-fit: cover;
+    max-height: 100%;
+    width: 100%;
+    border-radius: 0.3rem;
+    transition: all 0.5s;
+
+    &:hover {
+      filter: saturate(1.2);
+    }
+  }
+
+  &__picture-3 {
+    grid-row: 2 / 3;
+    grid-column: 2 / 5;
+
+    background-image: linear-gradient(
+        rgba($color-primary-light, 0.3),
+        rgba($color-primary-light, 0.3)
+      ),
+      url(../img/desc-pic-3.jpg);
+    background-size: cover;
+    object-fit: cover;
+    max-height: 100%;
+    width: 100%;
+    border-radius: 0.3rem;
+    transition: all 0.5s;
+
+    &:hover {
+      filter: saturate(1.2);
+    }
+  }
+}

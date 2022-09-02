@@ -1,0 +1,61 @@
+//My colors
+$color-primary: #ff406e;
+$color-primary-light: #ff7d9c;
+$color-primary-dark: #bb2f4f;
+
+$color-text-light: #dfaab7;
+$color-text-dark: #791b31;
+
+$color-grey: #c8c8c8;
+$color-grey-light: #ebebeb;
+$color-grey-dark: #a5a5a5;
+
+$shadow-dark: 0 4rem 6rem rgba(0, 0, 0, 0.4);
+$shadow-light: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+
+$linear-gradient: linear-gradient(
+  102deg,
+  rgba(256, 256, 256, 0.7) 0%,
+  rgba(258, 256, 256, 0.7) 60%,
+  transparent 60%,
+  transparent 100%
+);
+
+$bp-large: 62.5em; //1000px
+$bp-medium: 56.25em; //900px
+$bp-small: 43.75em; //700px
+$bp-smallest: 31.25em; //500px
+$bp-minimum: 26.875em; // 430px
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //1200px
+
+  @media screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+
+  @media screen and (max-width: $bp-small) {
+    font-size: 40%;
+  }
+
+  @media screen and (max-width: $bp-smallest) {
+    font-size: 34%;
+  }
+
+  @media screen and (max-width: $bp-minimum) {
+    font-size: 28%;
+  }
+}
+
+body {
+  background-color: $color-grey-light;
+  font-family: "Rubik", sans-serif;
+}

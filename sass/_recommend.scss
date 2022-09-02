@@ -1,0 +1,148 @@
+.recommend {
+  display: grid;
+  grid-template-columns: 1fr repeat(4, minmax(25rem, 1fr)) 1fr;
+  grid-template-rows: repeat(6, max-content);
+  row-gap: 1.3rem;
+  column-gap: 2.5rem;
+  margin-bottom: 5rem;
+
+  @media screen and (max-width: $bp-medium) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 3rem;
+  }
+
+  &__header {
+    grid-row: 1 / 2;
+    grid-column: 3 / 5;
+    font-size: 4.2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: $color-primary-dark;
+    text-transform: uppercase;
+    cursor: default;
+
+    @media screen and (max-width: $bp-medium) {
+      margin-bottom: 1rem;
+    }
+
+    &::selection {
+      background-color: rgba($color-primary, 0.5);
+      color: #fff;
+    }
+  }
+
+  &__container-1 {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    background-image: $linear-gradient, url(../img/mirai-nikki.png);
+  }
+
+  &__container-2 {
+    grid-column: 4/ 6;
+    grid-row: 2 / 3;
+    background-image: $linear-gradient, url(../img/fairy-tail.jpg);
+  }
+
+  &__container-3 {
+    grid-column: 2 / 4;
+    grid-row: 4 / 5;
+    background-image: $linear-gradient, url(../img/anohana.png);
+  }
+
+  &__container-4 {
+    grid-column: 4 / 6;
+    grid-row: 4 / 5;
+    background-image: $linear-gradient, url(../img/another.png);
+  }
+
+  &__container-5 {
+    grid-column: 2 / 4;
+    grid-row: 6 / 7;
+    background-image: $linear-gradient, url(../img/akame-ga-kill.png);
+  }
+
+  &__container-6 {
+    grid-column: 4 / 6;
+    grid-row: 6 / 7;
+    background-image: $linear-gradient, url(../img/soul-eater.jpg);
+  }
+
+  &__container-1,
+  &__container-2,
+  &__container-3,
+  &__container-4,
+  &__container-5,
+  &__container-6 {
+    transition: all 0.5s;
+
+    &:hover {
+      -webkit-filter: contrast(1.2);
+      filter: contrast(1.2);
+    }
+  }
+
+  &__title {
+    grid-column: 1 / 2;
+    font-size: 5rem;
+    font-weight: 500;
+    color: $color-primary;
+    text-transform: uppercase;
+    cursor: default;
+
+    &::selection {
+      background-color: rgba($color-primary, 0.5);
+      color: #fff;
+    }
+  }
+
+  &__sinopsis {
+    grid-column: 1 / 2;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: rgb(65, 65, 65);
+    text-transform: uppercase;
+    cursor: default;
+
+    &::selection {
+      background-color: rgba($color-primary, 0.5);
+      color: #fff;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    grid-column: 2 / 3;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: $color-grey-light;
+    background-color: $color-primary-light;
+    height: max-content;
+    width: max-content;
+    align-self: end;
+    justify-self: end;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: translateY(-0.5rem);
+      background-color: $color-primary;
+      color: #fff;
+    }
+
+    &:active {
+      transform: translateY(0);
+      background-color: $color-primary-light;
+      color: $color-grey-light;
+    }
+
+    &::selection {
+      background-color: rgba($color-primary, 0.5);
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.footer {
+  height: max-content;
+  background-color: $color-primary-dark;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+
+  @media screen and (max-width: $bp-small) {
+    padding: 1.5rem;
+  }
+
+  &__info {
+    text-align: center;
+    line-height: 2rem;
+  }
+
+  &__heading {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: $color-primary-light;
+    cursor: default;
+
+    &::selection {
+      background-color: rgba($color-primary, 0.5);
+      color: #fff;
+    }
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: $color-primary-light;
+    cursor: default;
+
+    &::selection {
+      background-color: rgba($color-primary, 0.5);
+      color: #fff;
+    }
+  }
+}
